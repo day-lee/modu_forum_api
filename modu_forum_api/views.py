@@ -16,7 +16,7 @@ class PostList(APIView):
             serializer = PostSerializer(post, many=True)
             return Response(serializer.data, status=200)
         else:
-            return JsonResponse({"message": "POST DOES NOT EXIST"}, status=400)
+            return JsonResponse({"message": "POST DOES NOT EXIST"}, status=404)
 
 
 #질문 저장
