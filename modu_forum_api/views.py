@@ -30,7 +30,7 @@ def create_post(request):
 
 
 #질문 수정
-@api_view(['POST'])
+@api_view(['PUT'])
 def update_post(request, pk):
     post = Post.objects.get(id=pk)
     serializer = PostSerializer(instance=post, data=request.data)
