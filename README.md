@@ -1,5 +1,36 @@
 # MODU FORUM API
 
+## 📌 How to Install the "Modu Forum API" Project
+```
+# Create a New Folder for Project
+mkdir project_folder
+
+# Create a Virtual Environment 
+cd project_folder 
+python -m venv venv
+
+# Activate the Virtual Enviroment
+source project_folder\venv\Scripts\activate
+if below line shows up, virtual environment has been successfully created
+(venv) C:\> 
+
+# Install Required Packages
+pip install -r requirements.txt
+
+# Migrate Tables
+python manage.py makemigrations 
+python manage.py migrate
+
+# Create Admin Account
+python manage.py createsuperuser
+
+# Run Server
+python manage.py runserver
+
+
+```
+## 📌 Features
+
 ## Show Question Post
 
 - **URL**
